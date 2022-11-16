@@ -7,6 +7,10 @@
 body {
     width: 100%;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
    img {
     object-fit: cover;
     /* force l'image à couvrir la totalité de l'espace offert
