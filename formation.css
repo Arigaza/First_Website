@@ -91,8 +91,16 @@ top: 0px;
 
 /* text management */
 
+.mainTitle {
+font-family: 'oxygenR', Arial, Verdana, sans-serif;
+}
+.mainText {
+  
+}
+
 .allUppercase {
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .mainTitle {
@@ -159,7 +167,7 @@ input[type=text], .whiteBackground {
     z-index: 3;
   }
 
-  .buttons:hover {
+  .buttonOn,.buttons:hover {
     background-color: white;
   }
 
@@ -170,6 +178,7 @@ input[type=text], .whiteBackground {
     column-gap: 50px;
     /* background-color: #E8E8E4; */
     padding-bottom: 50px;
+    justify-content: center;
   }
   .stories {
     position: relative;
@@ -181,10 +190,6 @@ input[type=text], .whiteBackground {
     border-radius: 15px;
     overflow: hidden;
   }
-
-  /* .stories:hover {
-    background-color: white;
-  } */
 
   .storiesImage {
 opacity: 35%;
@@ -252,7 +257,7 @@ display: none;
 
 /* Links inside the dropdown */
 .dropdown-content div {
-  color: black;
+  /* color: black; */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -260,6 +265,7 @@ display: none;
 }
 
 /* Change color of dropdown links on hover */
+.activeDropdown, 
 .dropdown-content div:hover {background-color: #ddd;}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -269,3 +275,11 @@ display: none;
 }
 
 /* dropdown */
+
+/* 
+.web {}
+.swift {}
+.java
+.python
+.c 
+*/

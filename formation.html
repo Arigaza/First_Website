@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="formation.css">
-    <script src="dropDown.js"></script>
+    <script src="dropDown.js" defer></script>
+    <script src="SearchWork.js" defer></script>
 </head>
 
 <header>
@@ -37,21 +38,18 @@
         <!-- Job search -->
 
         <Div class="itemPadding">
-            <div class="footerLine whiteBackground " style="width:600px; height: 40px;">
+            <div class="footerLine whiteBackground" style="width:600px; height: 40px;">
                <div class="dropdown" onclick="myFunction()">
                 <div class="itemText dropbtn blue">
                     <img src="Assets\menu.png" alt="more" height="16px">
-                    <p>Metier</p>
+                    <p>formation</p>
                     <img src="Assets\arrowDown.png" alt="more choice">
                     <div id="myDropdown" class="dropdown-content">
-                        <div>Link 1</div>
-                        <div>Link 2</div>
-                        <div>Link 3</div>
-                        <div>Link 4</div>
-                        <div>Link 5</div>
-                        <div>Link 6</div>
-                        <div>Link 7</div>
-                        <div>Link 8</div>
+                        <div onclick="currentStorie(1)">Developpeur Web</div>
+                        <div onclick="currentStorie(2)">Developpeur Swift / SwiftUI</div>
+                        <div onclick="currentStorie(3)">Developpeur Java</div>
+                        <div onclick="currentStorie(4)">Developpeur Python</div>
+                        <div onclick="currentStorie(5)">Developpeur C / C++</div>  
                       </div>
                     </div>
                 </div>
@@ -83,21 +81,19 @@
         </div>
 
         <!-- localisation -->
-        <div class="buttons itemPadding" style="width: 200px;">
+        <div onclick="showStories();" class="buttons itemPadding button" style="width: 200px;">
             <span>Lancer ma recherche</span>
         </div>
 
         <!-- Stories -->
         <div class=" storiesContainer itemPadding">
             <!-- 1 -->
-            <div class="stories white">
+            <div class="stories white web">
                 <img class="storiesImage" src="Assets\Storie1.jpg" alt="Stories" width="650px">
                 <div class="textImage top">
-                    <div class="mainTitle allUppercase">CONSULTER NOS FICHES SUR LES MÉTIERS D’AVENIR </div>
+                    <div class="mainTitle allUppercase">Formation de Dev Web 9 mois</div>
                     <div class="mainText hiddenH">
-                        Vous ne savez pas vers quel métier vous orienter ? Consultez nos fiches pour tout savoir sur les
-                        métiers
-                        d’avenir.
+                   Formation comprenant 7 mois en intensif et 1.5 mois de stage, si validé et équivalent à un bac +2
                     </div>
                 </div>
                 <div class="buttons botRightButton" style="width: 200px; border-radius: 15px 0 15px 15px;">
@@ -105,7 +101,60 @@
                 </div>
             </div>
             <!-- 2 -->
-            <div class="stories white">
+            <div class="stories white web">
+                <img class="storiesImage" src="Assets\Storie1.jpg" alt="Stories" width="650px">
+                <div class="textImage top">
+                    <div class="mainTitle allUppercase">Initiation dev web 1 mois</div>
+                    <div class="mainText hiddenH">
+                    Formation de 1 mois intensif permettant de savoir si le code vous plait, aucun diplome reconnu suite à cette formation
+                    </div>
+                </div>
+                <div class="buttons botRightButton" style="width: 200px; border-radius: 15px 0 15px 15px;">
+                    <span>Lancer ma recherche</span>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="stories white swift">
+                <img class="storiesImage" src="Assets\Storie1.jpg" alt="Stories" width="650px">
+                <div class="textImage top">
+                    <div class="mainTitle allUppercase">Formation Apple Foundation program 1 mois</div>
+                    <div class="mainText hiddenH">
+                     Formation de 1 mois intensif en partenaria avec Apple, l'AFP est une initiation à swift et swiftUI où vous ferez le prototype d'une application au bout d'un mois
+                    </div>
+                </div>
+                <div class="buttons botRightButton" style="width: 200px; border-radius: 15px 0 15px 15px;">
+                    <span>Lancer ma recherche</span>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="stories white swift">
+                <img class="storiesImage" src="Assets\Storie1.jpg" alt="Stories" width="650px">
+                <div class="textImage top">
+                    <div class="mainTitle allUppercase">Formation Apple Foundation program Extended 3 mois</div>
+                    <div class="mainText hiddenH">
+          L'AFP extended est une formation de 3 mois intensif en partenaria avec Apple, elle fait suite à l'AFP et permet d'étendre les compétences acquise lors de celle ci et de faire une application au lieu d'un prototype.
+                    </div>
+                </div>
+                <div class="buttons botRightButton" style="width: 200px; border-radius: 15px 0 15px 15px;">
+                    <span>Lancer ma recherche</span>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="stories white python">
+                <img class="storiesImage" src="Assets\Storie1.jpg" alt="Stories" width="650px">
+                <div class="textImage top">
+                    <div class="mainTitle allUppercase">VOUS RENSEIGNER SUR LES FORMATIONS INCLUSIVES</div>
+                    <div class="mainText hiddenH">
+                        Les formations Inclusives sont ouverte à tous, avec ou sans bac et sont gratuite pour les
+                        personnes éloigné de l’emploi.
+                    </div>
+                </div>
+                <div class="buttons botRightButton" style="width: 200px; border-radius: 15px 0 15px 15px;">
+                    <span>Lancer ma recherche</span>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="stories white c">
                 <img class="storiesImage" src="Assets\Storie1.jpg" alt="Stories" width="650px">
                 <div class="textImage top">
                     <div class="mainTitle allUppercase">VOUS RENSEIGNER SUR LES FORMATIONS INCLUSIVES</div>
