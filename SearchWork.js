@@ -1,6 +1,6 @@
 let spotlightCase = 1
 
-const button = document.getElementsByClassName("button");
+const button = document.getElementsByClassName("dropdownButton");
 let isWeb = false
 let isSwift = false
 let isJava = false
@@ -10,32 +10,42 @@ hideStories()
 
 
 function hideStories() {
+    let activeDropdown = document.getElementsByClassName("activeDropdown");
     let reset = document.getElementsByClassName("stories");
     for (i = 0; i < reset.length; i++) {
         reset.item(i).style.display = "none";
     }
+    for (i = 0; i < activeDropdown.length; i++) {
+        activeDropdown[i].className = activeDropdown[i].className.replace("activeDropdown", "");
+    }
+
 }
 function currentStorie(n) {
     switch (n) {
         case n = 1:
             isWeb = true
-          break;
+            button[0].className += " activeDropdown";
+            break;
         case n = 2:
             isSwift = true
-          break;
+            button[1].className += " activeDropdown";
+            break;
         case n = 3:
             isJava = true
-          break;
-    
-        case n = 4: 
-            isPython = true
-          break;
-    
-          case n = 5: 
-          isC = true
-        break;
+            button[2].className += " activeDropdown";
+            break;
 
-      }
+        case n = 4:
+            isPython = true
+            button[3].className += " activeDropdown";
+            break;
+
+        case n = 5:
+            isC = true
+            button[4].className += " activeDropdown";
+            break;
+
+    }
 }
 
 function showStories(n) {

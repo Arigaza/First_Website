@@ -94,9 +94,9 @@ top: 0px;
 .mainTitle {
 font-family: 'oxygenR', Arial, Verdana, sans-serif;
 }
-.mainText {
+/* .mainText {
   
-}
+} */
 
 .allUppercase {
   text-transform: uppercase;
@@ -256,7 +256,7 @@ display: none;
 }
 
 /* Links inside the dropdown */
-.dropdown-content div {
+.dropdownButton{
   /* color: black; */
   padding: 12px 16px;
   text-decoration: none;
@@ -266,7 +266,9 @@ display: none;
 
 /* Change color of dropdown links on hover */
 .activeDropdown, 
-.dropdown-content div:hover {background-color: #ddd;}
+.dropdownButton:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
