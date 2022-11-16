@@ -50,6 +50,8 @@ footer {
     display: Flex;
   gap: 40px;
   flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
 }
 .footerLine {
     display: flex;
@@ -139,6 +141,10 @@ background-color: #011647;
     padding: 40px 0px;
 }
 
+.searchBox {
+  width:600px; 
+  height: 40px;
+}
 .itemText {
     display: flex;
     flex-direction: row;
@@ -285,3 +291,23 @@ display: none;
 .python
 .c 
 */
+
+@media only screen and (max-width: 620px) {
+  footer {
+    height: 651px;  
+}
+  .footerLine {
+    display: flex;
+    flex-direction: column;
+    gap: 3  0px;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+.searchBox {
+  width: 400px;
+}
+.searchFormation {
+  width: 100px;
+}
+}
