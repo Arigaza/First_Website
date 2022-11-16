@@ -30,6 +30,7 @@ header {
 }
 
 .title {
+    color : black;
     font-weight: bold;}
 
 .textField {
@@ -63,13 +64,13 @@ img {
   /* force l'image à couvrir la totalité de l'espace offert
    même si trop petite */  
 }
-    textarea {
-        border-radius: 10px;
-        margin: 5px;
-        padding: 5px;
-        width : 191px;
-        height: 51px;
-    }
+textarea {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    width : 191px;
+    height: 51px;
+}
 .buttons {
     cursor: pointer;
     display: inline-block;
@@ -82,6 +83,8 @@ img {
     justify-content: center; 
     background-color: #28f4a7;
     border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
 .buttons:hover {
@@ -100,7 +103,7 @@ input {
 label
 {
     display: block;
-    width: 300px;
+    width: 100px;
     float: left;
 
 }
@@ -108,6 +111,7 @@ form {
     display: flex;
     flex-flow: column;
     align-items: center;
+    
 }
 
 footer {
