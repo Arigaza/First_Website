@@ -66,6 +66,10 @@ footer {
  color: white;
 }
 
+.whiteOnBlue {
+  color: white;
+background-color: #011647;
+}
 
 /* Carroussel */
 
