@@ -33,7 +33,6 @@ img {
   }
 
 /* Footer */
-  
 footer {
     display: flex;
     flex-direction: column;
@@ -91,6 +90,10 @@ top: 0px;
 /* Header */
 
 /* text management */
+
+.allUppercase {
+  text-transform: uppercase;
+}
 
 .mainTitle {
     font-weight: bold;
@@ -212,6 +215,10 @@ justify-content: center;
     z-index: 2;
   }
 
-  .allUppercase {
-    text-transform: uppercase;
+  .hiddenH {
+display: none;
   }
+  .hiddenH:hover {
+    display: initial;
+      }
+ 
