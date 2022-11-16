@@ -140,5 +140,44 @@ footer {
 
 
 
+@media only screen and (max-width: 620px) {
+    footer {
+      height: 651px;  
+  }
+    .footerLine {
+      display: flex;
+      flex-direction: column;
+      gap: 3  0px;
+      justify-content: center; 
+      align-items: center;
+      width: 100%;
+  }
+  .searchBox {
+    width: 400px;
+  }
+  .searchFormation {
+    width: 100px;
+  }
+  }
 
+
+  @media only screen and (max-width: 620px) {
+  footer {
+    height: 651px;  
+}
+  .footerLine {
+    display: flex;
+    flex-direction: column;
+    gap: 3  0px;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+.searchBox {
+  width: 400px;
+}
+.searchFormation {
+  width: 100px;
+}
+}
  
