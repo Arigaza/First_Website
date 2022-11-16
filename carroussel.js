@@ -26,6 +26,3 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active"; // met le bon dot en actif
 
 }
-
-
-
