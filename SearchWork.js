@@ -23,26 +23,60 @@ function hideStories() {
 function currentStorie(n) {
     switch (n) {
         case n = 1:
-            isWeb = true
-            button[0].className += " activeDropdown";
+            if (isWeb) {
+                isWeb = false
+                button[0].className = button[0].className.replace("activeDropdown", " ");
+                console.log(isWeb)
+                console.log(button[0])
+            }
+            else {
+                isWeb = true
+                button[0].className += " activeDropdown";
+            }
             break;
         case n = 2:
-            isSwift = true
+            if (isSwift) {
+                !isSwift
+                button[1].className = button[1].className.replace("activeDropdown", "");
+            }
+            else {
+                isSwift = true
             button[1].className += " activeDropdown";
+            }
             break;
         case n = 3:
-            isJava = true
-            button[2].className += " activeDropdown";
-            break;
+            if (isJava) {
+                !isJava
+                button[2].className = button[2].className.replace("activeDropdown", "");
+            }
+            else {
+                isJava = true
+                button[2].className += " activeDropdown";
+            }
+            break; 
 
         case n = 4:
-            isPython = true
+            if (isWeb) {
+                !isWeb
+                button[3].className = button[3].className.replace("activeDropdown", "");
+            }
+            else {
+                isPython = true
             button[3].className += " activeDropdown";
+            }
+         
             break;
 
         case n = 5:
-            isC = true
-            button[4].className += " activeDropdown";
+            if (isC) {
+                !isC
+                button[4].className = button[4].className.replace("activeDropdown", "");
+            }
+            else {
+                isC = true
+                button[4].className += " activeDropdown";
+            }
+        
             break;
 
     }
