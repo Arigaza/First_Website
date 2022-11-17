@@ -6,6 +6,7 @@ let isSwift = false
 let isJava = false
 let isPython = false
 let isC = false
+let storiesshown = false
 hideStories()
 
 
@@ -83,6 +84,7 @@ function currentStorie(n) {
 }
 
 function showStories(n) {
+    storiesshown = true
     let i;
     let web = document.getElementsByClassName("web");
     let swift = document.getElementsByClassName("swift");
@@ -91,24 +93,52 @@ function showStories(n) {
     let c = document.getElementsByClassName("c");
     let reset = document.getElementsByClassName("stories");
     for (i = 0; i < web.length; i++) {
-        if (isWeb) web.item(i).style.display = "initial";
+        if (isWeb) {
+            web.item(i).style.display = "initial";
+        }
+        else {
+            web.item(i).style.display = "none";  
+        }
+        
     }
     for (i = 0; i < swift.length; i++) {
-        if (isSwift) swift.item(i).style.display = "initial";
-
+        if (isSwift) {
+        swift.item(i).style.display = "initial";
+    }
+else {
+    swift.item(i).style.display = "none";
+}
     }
     for (i = 0; i < java.length; i++) {
-        if (isJava) java.item(i).style.display = "initial";
-
+        if (isJava) {
+            java.item(i).style.display = "initial";
+        }
+else {
+    java.item(i).style.display = "none"; 
+}
     }
     for (i = 0; i < python.length; i++) {
-        if (isPython) python.item(i).style.display = "initial";
+        if (isPython) {
+            python.item(i).style.display = "initial";
+        }
+        else {
+            python.item(i).style.display = "none"; 
+        }
 
     }
     for (i = 0; i < c.length; i++) {
-        if (isC) c.item(i).style.display = "initial";
+        if (isC) {
+            c.item(i).style.display = "initial";
+        }
+        else {
+            c.item(i).style.display = "none";
+        }
 
     }
 }
 
-
+setInterval(() => {
+   if (storiesshown) {
+    showStories()
+   }
+}, 500);
