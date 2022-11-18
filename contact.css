@@ -13,6 +13,12 @@ header {
     vertical-align: center;
     
 }
+/*on ne veut pas que la nav parasite le header
+par défaut sur grand écran*/
+ nav {
+    display: none;
+}
+
 
 #header_menu{
     display: grid;
@@ -140,28 +146,49 @@ footer {
 
 
 
-@media only screen and (max-width: 620px) {
-    footer {
-      height: 651px;  
-  }
-    .footerLine {
-      display: flex;
-      flex-direction: column;
-      gap: 3  0px;
-      justify-content: center; 
-      align-items: center;
-      width: 100%;
-  }
-  .searchBox {
-    width: 400px;
-  }
-  .searchFormation {
-    width: 100px;
-  }
-  }
+
 
 
   @media only screen and (max-width: 620px) {
+
+/*on ne veut pas voir le header sur ce format*/
+header{
+    display: none;
+}
+
+
+ nav 
+    {
+        display: flex;
+        flex-flow: column;
+        background: #204478;
+        height: 220px;
+        align-items: center;
+        
+    }
+ul  {
+    color: white;
+    list-style-type: none;
+    display: flex ;
+    flex-flow: column;
+}
+
+ label.menu2 
+  /* pour ne pas parasiter mes autres labels 
+ j'ai créé une classe spécifique pour celui ci */
+    {
+        width: 60px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 60px;
+        color: white;
+        cursor: pointer;
+
+    }
+  
   footer {
     height: 651px;  
 }
@@ -179,5 +206,86 @@ footer {
 .searchFormation {
   width: 100px;
 }
+
+#toggle:checked + #menu2  {
+        display: flex;
+    }
 }
- 
+
+/* à ne pas toucher car on veux cliquer sur l'icône pour faire
+apparaitre le menu contenu dans la nav  */
+#toggle { display :none;
+}
+#menu2 {display: none;
+ }
+
+/*format tablette j'ai mis mis 900*/
+ @media only screen and (max-width: 900px) {
+
+/*on ne veut pas voir le header sur ce format*/
+header{
+    display: none;
+}
+
+
+ nav 
+    {
+        display: flex;
+        flex-flow: column;
+        background: #204478;
+        height: 220px;
+        align-items: center;
+        
+    }
+ul  {
+    color: white;
+    list-style-type: none;
+    display: flex ;
+    flex-flow: column;
+}
+
+ label.menu2 
+  /* pour ne pas parasiter mes autres labels 
+ j'ai créé une classe spécifique pour celui ci */
+    {
+        width: 60px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+
+    }
+  
+  footer {
+    height: 651px;  
+}
+  .footerLine {
+    display: flex;
+    flex-direction: column;
+    gap: 3  0px;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+.searchBox {
+  width: 400px;
+}
+.searchFormation {
+  width: 100px;
+}
+
+#toggle:checked + #menu2  {
+        display: flex;
+    }
+}
+
+/* à ne pas toucher car on veux cliquer sur l'icône pour faire
+apparaitre le menu contenu dans la nav  */
+#toggle { display :none;
+}
+#menu2 {display: none;
+ }
